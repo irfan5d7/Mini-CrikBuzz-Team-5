@@ -1,0 +1,225 @@
+Title   :CSK Vs SRH
+Toss won by   :CSK Vs SRH
+Innings1   :SRH
+Score   :0/2
+Innings2   :SRH
+Score   :0/5
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+A                   41        0         j                   
+B                   52        0         h                   
+C                   25        0         j                   
+D                   22        0         i                   
+E                   11        0         k                   
+F                   83        0         f                   
+G                   83        0         f                   
+H                   83        0         h                   
+I                   18        0         j                   
+J                   50        0         f                   
+K                   9         0         f                   
+Bowler_Name         wick_taken 
+b                   1          
+c                   1          
+f                   1          
+g                   1          
+i                   1          
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+a                   89        0         F                   
+b                   61        0         G                   
+c                   81        0         I                   
+d                   8         0         C                   
+e                   17        0         H                   
+f                   33        0         F                   
+g                   82        0         G                   
+h                   76        0         D                   
+i                   4         0         B                   
+j                   66        0         G                   
+k                   36        0         F                   
+Bowler_Name         %-11s
+B                   1          
+F                   1          
+
+
+--------------------
+
+Title   :MI Vs KXIP
+Toss won by   :KXIP
+Innings1   :KXIP
+Score   :0/2
+Innings2   :KXIP
+Score   :0/5
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+A                   41        0         j                   
+B                   52        0         h                   
+C                   25        0         j                   
+D                   22        0         i                   
+E                   11        0         k                   
+F                   83        0         f                   
+G                   83        0         f                   
+H                   83        0         h                   
+I                   18        0         j                   
+J                   50        0         f                   
+K                   9         0         f                   
+Bowler_Name         wick_taken 
+b                   1          
+c                   1          
+f                   1          
+g                   1          
+i                   1          
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+a                   89        0         F                   
+b                   61        0         G                   
+c                   81        0         I                   
+d                   8         0         C                   
+e                   17        0         H                   
+f                   33        0         F                   
+g                   82        0         G                   
+h                   76        0         D                   
+i                   4         0         B                   
+j                   66        0         G                   
+k                   36        0         F                   
+Bowler_Name         %-11s
+B                   1          
+F                   1          
+
+
+--------------------
+
+Title   :KXIP Vs RCB
+Toss won by   :KXIP Vs RCB
+Innings1   :RCB
+Score   :0/2
+Innings2   :RCB
+Score   :0/5
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+A                   41        0         j                   
+B                   52        0         h                   
+C                   25        0         j                   
+D                   22        0         i                   
+E                   11        0         k                   
+F                   83        0         f                   
+G                   83        0         f                   
+H                   83        0         h                   
+I                   18        0         j                   
+J                   50        0         f                   
+K                   9         0         f                   
+Bowler_Name         wick_taken 
+b                   1          
+c                   1          
+f                   1          
+g                   1          
+i                   1          
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+a                   89        0         F                   
+b                   61        0         G                   
+c                   81        0         I                   
+d                   8         0         C                   
+e                   17        0         H                   
+f                   33        0         F                   
+g                   82        0         G                   
+h                   76        0         D                   
+i                   4         0         B                   
+j                   66        0         G                   
+k                   36        0         F                   
+Bowler_Name         %-11s
+B                   1          
+F                   1          
+
+
+------------------------------------------------------------------------------
+
+Title   :SKH Vs RR
+Toss won by   :SKH Vs RR
+Innings1   :RR
+Score   :0/2
+Innings2   :RR
+Score   :0/5
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+A                   41        0         j                   
+B                   52        0         h                   
+C                   25        0         j                   
+D                   22        0         i                   
+E                   11        0         k                   
+F                   83        0         f                   
+G                   83        0         f                   
+H                   83        0         h                   
+I                   18        0         j                   
+J                   50        0         f                   
+K                   9         0         f                   
+Bowler_Name         wick_taken 
+b                   1          
+c                   1          
+f                   1          
+g                   1          
+i                   1          
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+a                   89        0         F                   
+b                   61        0         G                   
+c                   81        0         I                   
+d                   8         0         C                   
+e                   17        0         H                   
+f                   33        0         F                   
+g                   82        0         G                   
+h                   76        0         D                   
+i                   4         0         B                   
+j                   66        0         G                   
+k                   36        0         F                   
+Bowler_Name         %-11s
+B                   1          
+F                   1          
+
+
+------------------------------------------------------------------------------
+
+Title   :RR Vs DD
+Toss won by   :DD
+Innings1   :DD
+Score   :0/2
+Innings2   :DD
+Score   :0/5
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+A                   41        0         j                   
+B                   52        0         h                   
+C                   25        0         j                   
+D                   22        0         i                   
+E                   11        0         k                   
+F                   83        0         f                   
+G                   83        0         f                   
+H                   83        0         h                   
+I                   18        0         j                   
+J                   50        0         f                   
+K                   9         0         f                   
+Bowler_Name         wick_taken 
+b                   1          
+c                   1          
+f                   1          
+g                   1          
+i                   1          
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+a                   89        0         F                   
+b                   61        0         G                   
+c                   81        0         I                   
+d                   8         0         C                   
+e                   17        0         H                   
+f                   33        0         F                   
+g                   82        0         G                   
+h                   76        0         D                   
+i                   4         0         B                   
+j                   66        0         G                   
+k                   36        0         F                   
+Bowler_Name         %-11s
+B                   1          
+F                   1          
+
+
+------------------------------------------------------------------------------
+

@@ -1,0 +1,82 @@
+Title               :srh vs csk          
+Toss won by         :csk                 
+Win team:           csk                 
+Innings1            :csk                 
+Score               :8/0
+Innings2            :srh                 
+Score               :12/0
+
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+dhawan              8         2         Not_OUT             
+kane                0         0         Not_OUT             
+kumar               0         0         Not_OUT             
+rashid              0         0         Not_OUT             
+shakib              0         0         Not_OUT             
+alex                0         0         Not_OUT             
+billy               0         0         Not_OUT             
+deepak              0         0         Not_OUT             
+seddarth            0         0         Not_OUT             
+yusuf               0         0         Not_OUT             
+manish              0         0         Not_OUT             
+Bowler_Name         wick_taken 
+
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+dhoni               12        2         Not_OUT             
+plessis             0         0         Not_OUT             
+raina               0         0         Not_OUT             
+bravo               0         0         Not_OUT             
+watson              0         0         Not_OUT             
+jadeja              0         0         Not_OUT             
+chachar             0         0         Not_OUT             
+rayudu              0         0         Not_OUT             
+murali              0         0         Not_OUT             
+shardul             0         0         Not_OUT             
+kedar               0         0         Not_OUT             
+Bowler_Name         wick_taken 
+
+
+------------------------------------------------------------------------------
+
+Title               :csk vs srh          
+Toss won by         :srh                 
+Win team            :srh                 
+Innings1            :srh                 
+Score               :10/0
+Innings2            :csk                 
+Score               :12/0
+
+Innings 1 Scorecard
+Name                runs      balls     wick_taken_by       
+dhoni               10        2         Not_OUT             
+plessis             0         0         Not_OUT             
+raina               0         0         Not_OUT             
+bravo               0         0         Not_OUT             
+watson              0         0         Not_OUT             
+jadeja              0         0         Not_OUT             
+chachar             0         0         Not_OUT             
+rayudu              0         0         Not_OUT             
+murali              0         0         Not_OUT             
+shardul             0         0         Not_OUT             
+kedar               0         0         Not_OUT             
+Bowler_Name         wick_taken 
+
+Innings 2 Scorecard
+Name                runs      balls     wick_taken_by       
+dhawan              12        2         Not_OUT             
+kane                0         0         Not_OUT             
+kumar               0         0         Not_OUT             
+rashid              0         0         Not_OUT             
+shakib              0         0         Not_OUT             
+alex                0         0         Not_OUT             
+billy               0         0         Not_OUT             
+deepak              0         0         Not_OUT             
+seddarth            0         0         Not_OUT             
+yusuf               0         0         Not_OUT             
+manish              0         0         Not_OUT             
+Bowler_Name         wick_taken 
+
+
+------------------------------------------------------------------------------
+

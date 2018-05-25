@@ -304,7 +304,6 @@ void save_match(match *m){
 	for (int index = 0; index<11; index++){
 		struct player* temp = get_player_info(m->team1_ar[index].name);
 		int seek = find_player(m->team1_ar[index].name);
-		printf("\n%d", seek);
 		if (temp == NULL){
 			insert_player(m->team1_ar[index]);
 		}
@@ -343,9 +342,7 @@ void sort(){
 		record[index1] = record[min_index];
 		record[min_index] = temp;
 	}
-	//for (int i = 0; i < len; i++){
-		//printf("\n%-20s%-10d%-10d", record[i]->name, record[i]->seek, record[i]->views);
-	//}
+	
 }
 
 void load_records(){
@@ -447,8 +444,6 @@ char** get_player_list(char *name){
 
 		if (ch == EOF)break;
 	}
-
-	printf("%d\n", index);
 
 	int count = 0;
 	char * buff = (char*)malloc(sizeof(char) * 255);

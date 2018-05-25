@@ -88,26 +88,7 @@ void live_match()
 		}
 	}
 }
-//void feeder()
-//{
-//	if (conn())
-//	{
-//		int c = 0;
-//		while (1)
-//		{
-//			printf("Menu\n1.Ongoing Matches\t2.Create new match\t3.Back\n");
-//			scanf("%d", &c);
-//			switch (c)
-//			{
-//			case 1: match_list();
-//				break;
-//			case 2: create();
-//				break;
-//			case 3: return;
-//			}
-//		}
-//	}
-//}
+
 void feeder()
 {
 	if (conn())
@@ -116,24 +97,6 @@ void feeder()
 	}
 }
 
-//void viewer()
-//{
-//	int c = 0;
-//	while (1)
-//	{
-//		printf("Menu\n1.Ongoing Matches\t2.Back\n");
-//		scanf("%d", &c);
-//		switch (c)
-//		{
-//		case 1: match_list();
-//			break;
-//		case 2: create();
-//			break;
-//		case 3: return;
-//		}
-//	}
-//
-//}
 
 void viewer()
 {
@@ -159,26 +122,6 @@ void viewer()
 
 }
 
-
-//int conn()
-//{
-//	char* uid = (char*)malloc(sizeof(char) * 32);
-//	char* pass = (char*)malloc(sizeof(char) * 32);
-//	while (1)
-//	{
-//		printf("Enter uid: ");
-//		scanf("%s", uid);
-//		printf("Enter Pass: ");
-//		scanf("%s", pass);
-//		if (str_cmp(uid , "feed") && str_cmp(pass , "123"))
-//		{
-//			free(uid);
-//			free(pass);
-//			return 1;
-//		}
-//	}
-//	
-//}
 
 int conn()
 {
@@ -230,6 +173,7 @@ void display_prev(struct previous* prv, int len)
 }
 
 void match_res()
+
 {
 	int len = 0;
 	char* tname1 = (char*)malloc(sizeof(char) * 32);
@@ -253,66 +197,51 @@ void match_res()
 void info()
 {
 	char* name = (char*)malloc(sizeof(char) * 32);
-	printf("Enter Player Name");
+	printf("Enter Player Name  :  ");
 	scanf("%s", name);
 	lower(name);
-	player* p = get_player_info(name);// lower to 
-	printf("%s\Team: s", p->name, p->team);
-	printf("Runs Scored\t Wickets Taken\t");
-	printf("%d\t%d", p->runs, p->wickets_taken);
+	player* p = get_player_info(name);
+	if (p == NULL)
+		printf("\n No such Player\n");
+	else
+	{
+		printf("\n%s\Team: %s\n", p->name, p->team);
+		printf("Runs Scored\t %d\n", p->runs);
+		printf("Wickets Taken\t %d\n",  p->wickets_taken);
+	}
+	printf("Press Enter to continue");
+	getchar();
+	getchar();
 }
 
 
 void stats()
 {
-	int c;
-	printf("1.Match Results\t2.Player Info\n");
-	scanf("%d", &c);
-	if (c == 1)
+	int c = 0;
+	while (1)
 	{
-		match_res();
-	}
-	else if (c == 2)
-	{
-		info();
+		printTemplate();
+		printf("\t\t\t||-------------------------------------------------------------------------------||\n");
+		printf("\t\t\t||-------------------------------------------------------------------------------||\n");
+		printf("\n\t\t\t||\t\t\t******** MENU ********* \t\t\t\t\t ||\n\n\t\t\t||\t\t\t1.Match Results\t\t\t\t\t\t ||\n\n\t\t\t||\t\t\t2.Player Info\t\t\t\t\t\t\t\t ||\n\n\t\t\t||\t\t\t3.Back\t\t\t\t\t\t\t\t \n\n");
+		printf("\t\t\t||-------------------------------------------------------------------------------||\n");
+		printf("\t\t\t||-------------------------------------------------------------------------------||\n");
+		printf("\t\t\t\t\t\tEnter your Choice : ");
+		scanf("%d", &c);
+		if (c == 1)
+		{
+			match_res();
+		}
+		else if (c == 2)
+		{
+			info();
+		}
+		else if (c == 3)
+			return;
 	}
 }
 
 
-//void match_list()
-//{
-//	int m,c;
-//	m = 1;
-//	struct node* h = getLiveMatches();
-//	struct node* temp = h;
-//	while (temp != NULL)
-//	{
-//		printf("%d.%s vs %s\n", m++, temp->m->team1, temp->m->team2);
-//		temp = temp->next;
-//	}
-//	scanf("%d", &c);
-//	display(c);
-//}
-//void create()
-//{
-//	char* team1 = (char*)malloc(sizeof(char*) * 16);
-//	char* team2 = (char*)malloc(sizeof(char*) * 16);
-//	int toss;
-//	int bat_first;
-//	int overs;
-//	printf("Team 1: ");
-//	scanf("%s",team1);
-//	printf("Team 2: ");
-//	scanf("%s",team2);
-//	printf("Toss won by: ");
-//	scanf("%d",&toss);
-//	printf("Bat first by");
-//	scanf("%d",&bat_first);
-//	printf("Overs : ");
-//	scanf("%d",&overs);
-//	match* c_mat = creatematch(team1, team2, toss, bat_first, overs);
-//	feeder_query(c_mat);
-//}
 
 void match_list()
 {
@@ -331,7 +260,10 @@ void match_list()
 	}
 	printf("\n");
 	printf("\t\t\t||-----------------------------------------------------------------||");
+	printf("\n\t\t\t||---------99.Back-------------------------------------------------||");
 	scanf("%d", &c);
+	if (c == 99)
+		viewer();
 	display(c);
 }
 void create()
@@ -342,7 +274,7 @@ void create()
 	int bat_first;
 	int overs;
 	printTemplate();
-	printf("\t\t\t\t Enter the team Details ");
+	printf("\t\t\t\t Enter the Match Details ");
 	printf("\n\n\t\t\t\t\t");
 	printf("Team 1: ");
 	scanf("%s", team1);
@@ -362,81 +294,7 @@ void create()
 }
 
 
-//void feeder_query(match* c_mat)
-//{
-//	int i, j,score,legal;
-//	i = j = 0;
-//	int* upd = (int*)malloc(sizeof(int) * 3);
-//	int* outr = (int*)malloc(sizeof(int) * 2);
-//	char* query = (char*)malloc(sizeof(char) * 128);
-//	char* tmp = (char*)malloc(sizeof(char) * 32);
-//	char* cmd = (char*)malloc(sizeof(char) * 32);
-//	while (1)
-//	{
-//		getchar();
-//		printf("\n>");
-//		scanf("%[^\n]s", query);
-//		i = 0;
-//		cmd = csv(query, &i);
-//		i++;
-//		if (str_cmp(cmd, "update"))
-//		{
-//			j = 0;
-//			while (query[i] != '\0')
-//			{
-//				tmp = csv(query, &i);
-//				if (query[i] != '\0')
-//					i++;
-//				upd[j++] = char_to_int(tmp);
-//			}
-//
-//			match *m = traverse(upd[0]);
-//			m->matchOver;
-//			update(m, upd[1], upd[2]);
-//			if (m->matchOver == 1)
-//			{
-//				live_match();
-//			}
-//		}
-//		else if (str_cmp(cmd, "out") == 1)
-//		{
-//			j = 0;
-//			while (query[i] != '\0')
-//			{
-//				tmp = csv(query, &i);
-//				if (query[i] != '\0')
-//					i++;
-//				outr[j++] = char_to_int(tmp);
-//			}
-//			match *m = traverse(outr[0]);
-//			out(m, outr[1]);
-//			if (m->matchOver == 1)
-//			{
-//				live_match();
-//			}
-//		}
-//		else if (str_cmp(cmd, "exit") == 1)
-//		{
-//			live_match();
-//		}
-//		else
-//		{
-//			printf("Invalid command :)\n");
-//		}
-//	}
-//}
-//
-//char* csv(char *query, int* i)
-//{
-//	int j = 0;
-//	char* tmp = (char*)malloc(sizeof(char) * 32);
-//	while (query[*i] != ',' && query[*i] != ' ' && query[*i] != '\0')
-//	{
-//		tmp[j++] = query[(*i)++];
-//	}
-//	tmp[j] = '\0';
-//	return tmp;
-//}
+
 
 void feeder_query(match* c_mat)
 {
@@ -450,7 +308,7 @@ void feeder_query(match* c_mat)
 	while (1)
 	{
 		i = 0;
-		//printTemplate();
+		printTemplate();
 		printf("\t\t\t\t\t");
 		printf("\n>");
 		//printf("\n>");
@@ -529,24 +387,6 @@ int char_to_int(char* arr)
 	return val;
 }
 
-//
-//void display(int match_numb)
-//{
-//	match *m = traverse(match_numb);
-//	printf("Match : %s vs %s", m->team1, m->team2);
-//	printf("Innings : %d\n", m->innings);
-//	printf("Batting : %s \t", (m->currentBatting == 1 ? m->team1 : m->team2));
-//	printf("%d\t/%d\t(%d.%d)\n", (m->currentBatting == 1 ? m->total1 : m->total2), (max(m->stricker,m->nonStricker)-1),m->presentOver,m->nextBall);
-//	player stricker = (m->currentBatting == 1 ? m->team1_ar[m->stricker] : m->team2_ar[m->stricker]);
-//	player nonStricker = (m->currentBatting == 1 ? m->team1_ar[m->nonStricker] : m->team2_ar[m->nonStricker]);
-//	player bowler = (m->currentBatting == 2 ? m->team1_ar[m->bowler] : m->team2_ar[m->bowler]);
-//	printf("%20s* %4d %4d %.2f\n", stricker.name,stricker.runs,stricker.balls,strike_rate(stricker.runs,stricker.balls));
-//	printf("%20s  %4d %4d %.2f\n\n", nonStricker.name, nonStricker.runs, nonStricker.balls, strike_rate(nonStricker.runs, nonStricker.balls));
-//	
-//	printf("bowler: %s %d %d", bowler.name, bowler.overs_bowled, m->nextBall);
-//
-//}
-
 float runrate(float runs, int balls)
 {
 	if (balls == 0)
@@ -557,7 +397,7 @@ float runrate(float runs, int balls)
 void display(int match_numb)
 {
 	printTemplate();
-	match *m = traverse(match_numb);
+	match *m = traverse(match_numb-1);
 	player stricker = (m->currentBatting == 1 ? m->team1_ar[m->stricker] : m->team2_ar[m->stricker]);
 	player nonStricker = (m->currentBatting == 1 ? m->team1_ar[m->nonStricker] : m->team2_ar[m->nonStricker]);
 	player bowler = (m->currentBatting == 2 ? m->team1_ar[m->bowler] : m->team2_ar[m->bowler]);
@@ -569,6 +409,8 @@ void display(int match_numb)
 	printf("%-20s  %3d  %3d  %.2f\n\n", nonStricker.name, nonStricker.runs, nonStricker.balls, strike_rate(nonStricker.runs, m->presentOver * 6 + m->nextBall - 1));
 	printf("bowler : %-20s overs: %d.%d\n", bowler.name, bowler.overs_bowled, m->nextBall - 1);
 	while (_getch() != '\r');
+	getchar();
+	return;
 }
 
 

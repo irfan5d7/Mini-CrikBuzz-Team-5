@@ -100,8 +100,7 @@ match * creatematch(char *team1, char *team2, int toss, int firstBatting, int ma
 	m->nonStricker = 1;
 	m->presentOver = 0;
 	m->nextBall = 1;
-	//copyTeamNames("C:/Users/aslam/Desktop/team5/index1.txt", team1, m->team1_ar);//use database call later
-	//copyTeamNames("C:\\Users\\aslam\\Desktop\\team5\\index2.txt", team2, m->team2_ar);//use database call later
+	
 	lower(m->team1);
 	names = get_player_list(m->team1);///changed here 
 	copyTeamNames(names, m->team1, m->team1_ar);
@@ -221,7 +220,7 @@ void update(struct match *mat, int no_of_runs, int legal)
 			mat->team2_ar[mat->stricker].runs += no_of_runs;
 			mat->team2_ar[mat->stricker].balls += 1;
 		}
-		if (mat->nextBall == 2)
+		if (mat->nextBall == 6)
 		{
 			mat->presentOver++;
 			mat->nextBall = 1;
